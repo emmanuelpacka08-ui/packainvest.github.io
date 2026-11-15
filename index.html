@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PACKA INVEST | Projets et implantation en Afrique centrale</title>
-<meta name="description" content="PACKA INVEST présente des projets en cours de structuration (eau, énergie, finance digitale) et oriente les entreprises souhaitant s'implanter au Congo-Brazzaville.">
+<title>PACKA INVEST | Investir et s'implanter en Afrique centrale</title>
+<meta name="description" content="PACKA INVEST : projets structurés et accompagnement à l'implantation en Afrique centrale. Eau, énergie, immobilier, agro-alimentaire, logistique portuaire, finance digitale.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="PACKA INVEST | Projets et implantation en Afrique centrale">
-<meta property="og:description" content="Projets en structuration : eau, énergie, finance digitale. Orientation pour l'implantation d'entreprises au Congo-Brazzaville.">
+<meta property="og:title" content="PACKA INVEST | Investir et s'implanter en Afrique centrale">
+<meta property="og:description" content="Projets structurés et accompagnement à l'implantation : eau, énergie, immobilier, agro-alimentaire, logistique portuaire, finance digitale.">
+<meta property="og:image" content="https://emmanuelpacka08-ui.github.io/packainvest.github.io/hero.jpg">
 <meta property="og:locale" content="fr_FR">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b3d2e'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23c9a227'%3EP%3C/text%3E%3C/svg%3E">
 <style>
@@ -16,81 +17,114 @@
 html{scroll-behavior:smooth}
 body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--creme);color:var(--texte);line-height:1.6}
 h1,h2,h3,h4{color:var(--vert);line-height:1.25}
-.container{max-width:1100px;margin:0 auto;padding:0 22px}
-section{padding:70px 0}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:78px 0}
 a{color:inherit}
-/* header */
-header{position:fixed;top:0;width:100%;background:rgba(11,61,46,.98);z-index:50}
-.nav{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:12px 22px}
+svg{display:block}
+
+/* HEADER */
+header{position:fixed;top:0;width:100%;background:rgba(11,61,46,.97);z-index:50;box-shadow:0 2px 14px rgba(0,0,0,.2)}
+.nav{display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:12px 22px}
 .logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;letter-spacing:1px;text-decoration:none}
-.logo .mark{width:34px;height:34px;border-radius:8px;background:var(--or);color:var(--vert);display:flex;align-items:center;justify-content:center;font-weight:800}
-.logo span.b{color:var(--or)}
-.nav-links{display:flex;gap:22px;list-style:none}
-.nav-links a{color:#e8e4d8;text-decoration:none;font-size:.9rem}
+.logo .mark{width:36px;height:36px;border-radius:9px;background:var(--or);color:var(--vert);display:flex;align-items:center;justify-content:center;font-weight:800}
+.logo .b{color:var(--or)}
+.nav-links{display:flex;gap:22px;list-style:none;align-items:center}
+.nav-links a{color:#e8e4d8;text-decoration:none;font-size:.9rem;font-weight:500}
 .nav-links a:hover{color:var(--or)}
-.burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem}
-/* hero */
-.hero{min-height:88vh;display:flex;align-items:center;background:linear-gradient(135deg,#0b3d2e,#14573f);padding-top:80px}
-.hero h1{color:#fff;font-size:clamp(2rem,5vw,3.3rem);max-width:780px}
+.nav-links .cta{background:var(--or);color:var(--vert);padding:9px 20px;border-radius:30px;font-weight:700}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+
+/* HERO avec image */
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:80px;color:#fff;
+ background-color:#0b3d2e;
+ background-image:linear-gradient(120deg,rgba(7,42,31,.93),rgba(11,61,46,.72)),url('hero.jpg'),url('https://images.unsplash.com/photo-1489516408517-0c0a15662682?w=1600'),linear-gradient(135deg,#0b3d2e,#14573f);
+ background-size:cover;background-position:center;background-repeat:no-repeat}
+.hero .kicker{color:var(--or);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:.8rem;margin-bottom:16px}
+.hero h1{color:#fff;font-size:clamp(2.1rem,5.2vw,3.8rem);max-width:800px;font-weight:800}
 .hero h1 span{color:var(--or)}
-.hero p{color:#d8d4c8;font-size:1.08rem;max-width:640px;margin:22px 0 30px}
-.btn{display:inline-block;padding:13px 28px;border-radius:30px;text-decoration:none;font-weight:700;font-size:.95rem;border:2px solid transparent}
+.hero p{color:#e2dfd3;font-size:1.12rem;max-width:660px;margin:24px 0 34px}
+.btn{display:inline-block;padding:14px 30px;border-radius:30px;text-decoration:none;font-weight:700;font-size:.95rem;border:2px solid transparent;transition:transform .2s}
+.btn:hover{transform:translateY(-3px)}
 .btn-or{background:var(--or);color:var(--vert)}
 .btn-ghost{border-color:#fff;color:#fff;margin-left:10px}
-/* chiffres */
+
+/* BANDEAU */
 .stats{background:var(--vert);padding:34px 0}
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;text-align:center}
-.stat h3{color:var(--or);font-size:1.4rem}
+.stat h3{color:var(--or);font-size:1.35rem}
 .stat p{color:#cfd8d2;font-size:.85rem}
-/* titres */
-.sec-head{text-align:center;max-width:720px;margin:0 auto 40px}
+
+/* TITRES */
+.sec-head{text-align:center;max-width:740px;margin:0 auto 44px}
 .tag{color:var(--or);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
-.sec-head h2{font-size:clamp(1.6rem,3.5vw,2.3rem);margin:8px 0 12px}
+.sec-head h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin:8px 0 12px}
 .sec-head p{color:var(--gris)}
-/* projets */
+
+/* SECTEURS */
+.secteurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.secteur{background:#fff;border-radius:14px;padding:30px 26px;border-top:4px solid var(--or);box-shadow:0 4px 16px rgba(0,0,0,.06);transition:transform .25s}
+.secteur:hover{transform:translateY(-6px)}
+.ico{width:50px;height:50px;border-radius:12px;background:var(--vert);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.ico svg{width:26px;height:26px;stroke:var(--or);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.secteur h3{font-size:1.12rem;margin-bottom:8px}
+.secteur p{font-size:.9rem;color:var(--gris)}
+
+/* PROJETS */
 #projets{background:#fff}
-.legend{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;font-size:.82rem;color:var(--gris);margin-bottom:28px}
-.projets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-.projet{background:var(--creme);border-radius:14px;border-top:5px solid var(--or);padding:26px;display:flex;flex-direction:column;box-shadow:0 4px 14px rgba(0,0,0,.07)}
-.pico{width:46px;height:46px;border-radius:10px;background:var(--vert);color:var(--or);font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.projets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:26px}
+.projet{background:var(--creme);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px rgba(0,0,0,.08);display:flex;flex-direction:column}
+.p-head{padding:26px;color:#fff;display:flex;align-items:center;gap:14px}
+.p-eau{background:linear-gradient(135deg,#0a3a5c,#1b6ca8)}
+.p-nrj{background:linear-gradient(135deg,#0b3d2e,#1a6b4f)}
+.p-fin{background:linear-gradient(135deg,#6b4e0e,#c9a227)}
+.p-head .ico{background:rgba(255,255,255,.15);margin:0}
+.p-head .ico svg{stroke:#fff}
+.p-head small{display:block;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.85}
+.p-head h3{color:#fff;font-size:1.25rem}
+.p-body{padding:24px;display:flex;flex-direction:column;flex:1}
 .badge{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 11px;border-radius:20px;background:#f5ead0;color:#8a6a10;margin-bottom:10px;width:fit-content}
-.projet h3{font-size:1.1rem;margin-bottom:6px}
-.projet .loc{font-size:.82rem;color:var(--gris);margin-bottom:10px}
-.projet p{font-size:.9rem;color:var(--gris);margin-bottom:10px}
+.loc{font-size:.82rem;color:var(--gris);margin-bottom:10px;font-weight:600}
+.p-body p{font-size:.9rem;color:var(--gris);margin-bottom:12px}
 .meta{font-size:.8rem;color:var(--vert);font-weight:600;border-top:1px dashed #ccc;padding-top:10px;margin:auto 0 14px}
 .meta div{margin-bottom:3px}
-.btn-detail{background:var(--vert);color:#fff;text-align:center;padding:11px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.85rem}
-.note{text-align:center;margin-top:26px;font-size:.82rem;color:var(--gris);font-style:italic}
-/* blocs texte */
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-.card{background:#fff;border-radius:14px;padding:28px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
-.card h3{margin-bottom:10px;font-size:1.1rem}
-.card p,.card li{font-size:.92rem;color:var(--gris)}
-.card ul{padding-left:18px}
+.btn-detail{background:var(--vert);color:#fff;text-align:center;padding:12px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.88rem}
+.btn-detail:hover{background:var(--vert2)}
+.note{text-align:center;margin-top:28px;font-size:.82rem;color:var(--gris);font-style:italic}
+
+/* IMPLANTATION */
 .timeline{max-width:800px;margin:0 auto}
-.etape{display:flex;gap:20px;margin-bottom:26px}
-.num{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:var(--vert);color:var(--or);display:flex;align-items:center;justify-content:center;font-weight:800}
-.etape h3{font-size:1.02rem;margin-bottom:4px}
+.etape{display:flex;gap:20px;margin-bottom:28px}
+.num{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:var(--vert);color:var(--or);display:flex;align-items:center;justify-content:center;font-weight:800}
+.etape h3{font-size:1.05rem;margin-bottom:4px}
 .etape p{font-size:.9rem;color:var(--gris)}
-/* contact */
+
+/* ACCOMPAGNEMENT */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:#fff;border-radius:14px;padding:28px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.card h3{margin-bottom:8px;font-size:1.08rem}
+.card p{font-size:.9rem;color:var(--gris)}
+
+/* CONTACT */
 #contact{background:var(--vert);color:#e8e4d8}
 #contact h2{color:#fff}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.ci{margin-bottom:18px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}
+.ci{margin-bottom:20px}
 .ci strong{color:var(--or);display:block;font-size:.78rem;letter-spacing:1px;text-transform:uppercase}
 .ci a{color:#fff;text-decoration:none}
-form{background:rgba(255,255,255,.08);padding:28px;border-radius:14px}
+form{background:rgba(255,255,255,.08);padding:30px;border-radius:16px}
 form label{display:block;font-size:.8rem;font-weight:600;margin:12px 0 5px;color:var(--or)}
 form input,form select,form textarea{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.1);color:#fff;font-size:1rem;font-family:inherit}
 form select option{color:#1c2420}
 form textarea{min-height:110px}
-.consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:.78rem;color:#cfd8d2}
-.consent input{width:auto;margin-top:3px}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px}
+.consent input{width:auto;margin-top:4px}
+.consent label{margin:0;font-weight:400;font-size:.78rem;color:#cfd8d2}
 form button{margin-top:18px;width:100%;background:var(--or);border:0;color:var(--vert);padding:14px;border-radius:30px;font-weight:800;font-size:1rem;cursor:pointer}
 #statut{margin-top:12px;font-size:.88rem;font-weight:600}
 .hp{position:absolute;left:-9999px}
-/* footer */
-footer{background:#072a1f;color:#9fb0a6;padding:44px 0 22px;font-size:.82rem}
+
+/* FOOTER */
+footer{background:#072a1f;color:#9fb0a6;padding:46px 0 22px;font-size:.82rem}
 .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px;margin-bottom:26px}
 footer h4{color:#fff;margin-bottom:12px;font-size:.95rem}
 footer ul{list-style:none}
@@ -100,13 +134,14 @@ footer a:hover{color:var(--or)}
 .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:.76rem;line-height:1.7;color:#8a9c92}
 .legal p{margin-bottom:10px}
 .copy{text-align:center;margin-top:14px;color:#5f7168}
+
 @media(max-width:860px){
- .nav-links{position:fixed;top:58px;right:-100%;flex-direction:column;background:var(--vert);width:100%;padding:22px;gap:16px;transition:right .3s}
+ .nav-links{position:fixed;top:60px;right:-100%;flex-direction:column;align-items:flex-start;background:var(--vert);width:100%;padding:22px;gap:16px;transition:right .3s}
  .nav-links.open{right:0}
  .burger{display:block}
  .contact-grid,.cols{grid-template-columns:1fr}
- section{padding:54px 0}
- .btn-ghost{margin:10px 0 0}
+ section{padding:56px 0}
+ .btn-ghost{margin:12px 0 0}
 }
 </style>
 </head>
@@ -117,11 +152,11 @@ footer a:hover{color:var(--or)}
   <a class="logo" href="#accueil"><div class="mark">P</div><div>PACKA <span class="b">INVEST</span></div></a>
   <ul class="nav-links" id="navLinks">
    <li><a href="#accueil">Accueil</a></li>
+   <li><a href="#secteurs">Secteurs</a></li>
    <li><a href="#projets">Projets</a></li>
-   <li><a href="#modele">Modèle</a></li>
    <li><a href="#implantation">S'implanter</a></li>
    <li><a href="#accompagnement">Accompagnement</a></li>
-   <li><a href="#contact">Contact</a></li>
+   <li><a href="#contact" class="cta">Contact</a></li>
   </ul>
   <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
  </nav>
@@ -129,114 +164,114 @@ footer a:hover{color:var(--or)}
 
 <section class="hero" id="accueil">
  <div class="container">
-  <h1>Des projets structurés pour <span>l'Afrique centrale.</span></h1>
-  <p>PACKA INVEST présente des projets en cours de structuration (eau, énergie, finance digitale) et oriente les entreprises qui souhaitent s'implanter au Congo-Brazzaville. Basé à Brazzaville, avec des projets à Pointe-Noire et dans d'autres pays d'Afrique.</p>
-  <a href="#projets" class="btn btn-or">Voir les projets</a>
-  <a href="#contact" class="btn btn-ghost">Nous contacter</a>
+  <div class="kicker">Afrique centrale &middot; Congo-Brazzaville</div>
+  <h1>Investir et s'implanter en <span>Afrique centrale.</span></h1>
+  <p>PACKA INVEST développe et présente des projets structurants dans l'eau, l'énergie, l'immobilier, l'agro-alimentaire, la logistique portuaire et la finance digitale, et accompagne les entreprises qui souhaitent s'implanter au Congo-Brazzaville.</p>
+  <a href="#projets" class="btn btn-or">Découvrir nos projets</a>
+  <a href="#contact" class="btn btn-ghost">Devenir partenaire</a>
  </div>
 </section>
 
 <div class="stats">
  <div class="container stats-grid">
-  <div class="stat"><h3>6 États</h3><p>Zone CEMAC (Cameroun, Congo, Gabon, Guinée équatoriale, RCA, Tchad)</p></div>
+  <div class="stat"><h3>6 États</h3><p>Zone CEMAC : Cameroun, Congo, Gabon, Guinée équatoriale, RCA, Tchad</p></div>
   <div class="stat"><h3>XAF</h3><p>Franc CFA CEMAC, arrimé à l'euro (1 € = 655,957 XAF)</p></div>
   <div class="stat"><h3>Pointe-Noire</h3><p>Principal port maritime du Congo</p></div>
  </div>
 </div>
 
-<section id="projets">
+<section id="secteurs">
  <div class="container">
   <div class="sec-head">
-   <div class="tag">Catalogue</div>
-   <h2>Projets présentés</h2>
-   <p>Trois projets dont Emmanuel Packa est le promoteur. Aucun n'est financé à ce jour. Les montants, hypothèses et documents détaillés sont transmis après signature d'un accord de confidentialité (NDA).</p>
+   <div class="tag">Secteurs d'intervention</div>
+   <h2>Nos domaines d'activité</h2>
+   <p>Des secteurs essentiels au développement de la région, où nous développons des projets et mobilisons des partenaires.</p>
   </div>
-  <div class="legend">
-   <span><strong>En structuration :</strong> le projet est en cours de montage (études, partenaires, financement) et rien n'est encore engagé.</span>
+  <div class="secteurs">
+   <div class="secteur"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>Eau</h3><p>Dessalement et production d'eau potable pour répondre aux besoins des villes côtières.</p></div>
+   <div class="secteur"><div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Énergie</h3><p>Production et réseaux intelligents pour une électricité plus fiable et mieux gérée.</p></div>
+   <div class="secteur"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"/></svg></div><h3>Immobilier</h3><p>Développement résidentiel et d'infrastructures immobilières en zones urbaines en croissance.</p></div>
+   <div class="secteur"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21V9M12 9c0-3 2-5 5-5 0 3-2 5-5 5zM12 13c0-3-2-5-5-5 0 3 2 5 5 5z"/></svg></div><h3>Agro-alimentaire</h3><p>Production et transformation locales pour renforcer la sécurité alimentaire régionale.</p></div>
+   <div class="secteur"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 17l2 3h14l2-3M5 17V9h14v8M9 9V5h6v4M12 12v3"/></svg></div><h3>Logistique portuaire</h3><p>Entreposage, transit et services logistiques autour du port de Pointe-Noire.</p></div>
+   <div class="secteur"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg></div><h3>Finance digitale</h3><p>Services financiers accessibles par mobile pour favoriser l'inclusion financière.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="projets" style="background:#fff">
+ <div class="container">
+  <div class="sec-head">
+   <div class="tag">Projets phares</div>
+   <h2>Trois projets structurants</h2>
+   <p>Les dossiers complets (business plan, hypothèses financières, calendrier) sont transmis après signature d'un accord de confidentialité (NDA).</p>
   </div>
   <div class="projets-grid">
 
    <div class="projet">
-    <div class="pico">EAU</div>
-    <span class="badge">En structuration</span>
-    <h3>Omni-Aqua Congo</h3>
-    <div class="loc">Pointe-Noire, République du Congo</div>
-    <p>Projet d'usine de dessalement d'eau de mer par osmose inverse pour produire de l'eau potable. Le modèle envisagé repose sur la vente d'eau à l'opérateur de distribution, sous réserve d'accords à conclure.</p>
-    <div class="meta"><div>Promoteur : Emmanuel Packa</div><div>Stade : structuration</div><div>Ticket et durée : communiqués sous NDA</div></div>
-    <a class="btn-detail" href="#contact">Demander le dossier (NDA)</a>
+    <div class="p-head p-eau"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><div><small>Eau</small><h3>Omni-Aqua Congo</h3></div></div>
+    <div class="p-body">
+     <span class="badge">En structuration</span>
+     <div class="loc">Pointe-Noire, République du Congo</div>
+     <p>Projet d'usine de dessalement d'eau de mer par osmose inverse, destinée à produire de l'eau potable. Le modèle repose sur un partenariat avec l'opérateur de distribution, sous réserve des accords à conclure.</p>
+     <div class="meta"><div>Promoteur : Emmanuel Packa</div><div>Ticket et calendrier : communiqués sous NDA</div></div>
+     <a class="btn-detail" href="#contact">Demander le dossier (NDA)</a>
+    </div>
    </div>
 
    <div class="projet">
-    <div class="pico">NRJ</div>
-    <span class="badge">En structuration</span>
-    <h3>SGDV : Smart-Grid Dédié au Volume</h3>
-    <div class="loc">Mali</div>
-    <p>Projet de réseau électrique intelligent (smart-grid). Son modèle économique et technique est détaillé dans un business plan disponible sous NDA.</p>
-    <div class="meta"><div>Promoteur : Emmanuel Packa</div><div>Stade : structuration</div><div>Ticket et durée : communiqués sous NDA</div></div>
-    <a class="btn-detail" href="#contact">Demander le dossier (NDA)</a>
+    <div class="p-head p-fin"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg></div><div><small>Finance digitale</small><h3>Touka'n Afrik</h3></div></div>
+    <div class="p-body">
+     <span class="badge">En structuration</span>
+     <div class="loc">Brazzaville, République du Congo</div>
+     <p>Plateforme de services financiers digitaux : épargne communautaire de type Mosolo, cartes, accès par USSD et WhatsApp. Le lancement dépend des agréments réglementaires requis.</p>
+     <div class="meta"><div>Promoteur : Emmanuel Packa</div><div>Ticket et calendrier : communiqués sous NDA</div></div>
+     <a class="btn-detail" href="#contact">Demander le dossier (NDA)</a>
+    </div>
    </div>
 
    <div class="projet">
-    <div class="pico">FIN</div>
-    <span class="badge">En structuration</span>
-    <h3>Touka'n Afrik</h3>
-    <div class="loc">Brazzaville, République du Congo</div>
-    <p>Plateforme de services financiers digitaux : épargne communautaire de type Mosolo, cartes, accès par USSD et WhatsApp. Le lancement dépendra des agréments réglementaires requis.</p>
-    <div class="meta"><div>Promoteur : Emmanuel Packa</div><div>Stade : structuration</div><div>Ticket et durée : communiqués sous NDA</div></div>
-    <a class="btn-detail" href="#contact">Demander le dossier (NDA)</a>
+    <div class="p-head p-nrj"><div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><div><small>Énergie</small><h3>SGDV : Smart-Grid Dédié au Volume</h3></div></div>
+    <div class="p-body">
+     <span class="badge">En structuration</span>
+     <div class="loc">Mali</div>
+     <p>Projet de réseau électrique intelligent (smart-grid). Le modèle économique et technique est détaillé dans un business plan disponible sous NDA.</p>
+     <div class="meta"><div>Promoteur : Emmanuel Packa</div><div>Ticket et calendrier : communiqués sous NDA</div></div>
+     <a class="btn-detail" href="#contact">Demander le dossier (NDA)</a>
+    </div>
    </div>
 
   </div>
-  <p class="note">Ces présentations sont des descriptions générales. Elles ne constituent ni une offre de titres, ni une sollicitation de placement, ni un conseil en investissement.</p>
+  <p class="note">« En structuration » : le projet est en cours de montage (études, partenaires, financement). Ces présentations ne constituent ni une offre de titres, ni une sollicitation de placement, ni un conseil en investissement.</p>
  </div>
 </section>
 
-<section id="modele">
- <div class="container">
-  <div class="sec-head">
-   <div class="tag">Transparence</div>
-   <h2>Notre modèle et nos conflits d'intérêts</h2>
-  </div>
-  <div class="two">
-   <div class="card">
-    <h3>Statut et rémunération</h3>
-    <p>PACKA INVEST est une activité exercée à titre individuel par Emmanuel Packa. Une structure juridique n'est pas encore immatriculée. La consultation du site et un premier échange sont gratuits. Aucune rémunération n'est perçue sans accord écrit préalable, précisé avant tout engagement.</p>
-   </div>
-   <div class="card">
-    <h3>Conflits d'intérêts</h3>
-    <p>Emmanuel Packa est le promoteur des trois projets présentés (Omni-Aqua Congo, SGDV, Touka'n Afrik). Il présente donc ses propres projets, et non ceux de tiers. Si des projets de tiers sont ajoutés, leur promoteur sera indiqué sur chaque fiche.</p>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="implantation" style="background:#fff">
+<section id="implantation">
  <div class="container">
   <div class="sec-head">
    <div class="tag">Implantation</div>
    <h2>S'implanter au Congo-Brazzaville</h2>
-   <p>Voici les grandes étapes habituelles et les organismes à contacter. Les conditions, pièces et délais sont fixés par les administrations. Vérifiez-les directement auprès d'elles avant toute décision.</p>
+   <p>Les grandes étapes habituelles et les organismes à contacter. Les conditions, pièces et délais sont fixés par les administrations : vérifiez-les directement auprès d'elles.</p>
   </div>
   <div class="timeline">
-   <div class="etape"><div class="num">1</div><div><h3>Choisir la forme juridique</h3><p>SARL, SA, succursale, etc. Un avocat ou un notaire local peut vous conseiller selon votre activité.</p></div></div>
-   <div class="etape"><div class="num">2</div><div><h3>Créer l'entreprise</h3><p>Les formalités de création passent par le guichet unique de création d'entreprises (ACPCE, Agence congolaise pour la création des entreprises), à contacter pour connaître les pièces et délais en vigueur.</p></div></div>
-   <div class="etape"><div class="num">3</div><div><h3>Obligations fiscales et sociales</h3><p>Numéro d'identification fiscale auprès de l'administration fiscale, affiliation à la Caisse nationale de sécurité sociale (CNSS), ouverture d'un compte bancaire.</p></div></div>
-   <div class="etape"><div class="num">4</div><div><h3>Agréments et régime des investissements</h3><p>Certains secteurs exigent une autorisation du ministère concerné. Pour les avantages liés aux investissements, renseignez-vous auprès de l'agence nationale de promotion des investissements et consultez le texte en vigueur.</p></div></div>
+   <div class="etape"><div class="num">1</div><div><h3>Choisir la forme juridique</h3><p>SARL, SA, succursale, etc. Un avocat ou un notaire local vous conseille selon votre activité.</p></div></div>
+   <div class="etape"><div class="num">2</div><div><h3>Créer l'entreprise</h3><p>Les formalités passent par le guichet unique de création d'entreprises (ACPCE), à contacter pour connaître les pièces et délais en vigueur.</p></div></div>
+   <div class="etape"><div class="num">3</div><div><h3>Obligations fiscales et sociales</h3><p>Numéro d'identification fiscale, affiliation à la CNSS, ouverture d'un compte bancaire.</p></div></div>
+   <div class="etape"><div class="num">4</div><div><h3>Agréments et régime des investissements</h3><p>Certains secteurs exigent une autorisation du ministère concerné. Pour les avantages liés aux investissements, renseignez-vous auprès de l'agence nationale de promotion des investissements.</p></div></div>
    <div class="etape"><div class="num">5</div><div><h3>Visas, séjour, recrutement</h3><p>Démarches auprès des services d'immigration et du ministère du Travail.</p></div></div>
   </div>
  </div>
 </section>
 
-<section id="accompagnement">
+<section id="accompagnement" style="background:#fff">
  <div class="container">
   <div class="sec-head">
    <div class="tag">Accompagnement</div>
-   <h2>Ce que nous pouvons faire</h2>
-   <p>Notre rôle est limité à l'orientation et à la mise en relation. Nous ne fournissons ni conseil juridique, ni conseil fiscal, ni conseil en investissement.</p>
+   <h2>Comment nous travaillons avec vous</h2>
+   <p>Notre rôle porte sur la présentation de projets, l'orientation et la mise en relation. Nous ne fournissons pas de conseil juridique, fiscal ou en investissement.</p>
   </div>
   <div class="two">
+   <div class="card"><h3>Présentation de projets</h3><p>Fiches de présentation, puis dossiers détaillés transmis après signature d'un NDA.</p></div>
    <div class="card"><h3>Mise en relation</h3><p>Nous vous orientons vers les bons interlocuteurs : administrations, avocats, notaires, experts-comptables.</p></div>
-   <div class="card"><h3>Présentation de projets</h3><p>Nous présentons nos projets et transmettons les dossiers détaillés après signature d'un NDA.</p></div>
    <div class="card"><h3>Orientation d'implantation</h3><p>Nous vous aidons à comprendre les étapes d'une implantation au Congo-Brazzaville et à identifier les organismes compétents.</p></div>
   </div>
  </div>
@@ -247,7 +282,7 @@ footer a:hover{color:var(--or)}
   <div class="sec-head">
    <div class="tag">Contact</div>
    <h2>Parlons de votre projet</h2>
-   <p style="color:#cfd8d2">Investisseur ou entreprise souhaitant s'implanter : écrivez-nous.</p>
+   <p style="color:#cfd8d2">Investisseur, partenaire ou entreprise souhaitant s'implanter : écrivez-nous.</p>
   </div>
   <div class="contact-grid">
    <div>
@@ -255,7 +290,7 @@ footer a:hover{color:var(--or)}
     <div class="ci"><strong>Email</strong><a href="mailto:emmanuelpacka08@gmail.com">emmanuelpacka08@gmail.com</a></div>
     <div class="ci"><strong>Téléphone / WhatsApp</strong><a href="tel:+242061096096">+242 06 109 60 96</a></div>
     <div class="ci"><strong>Basé à</strong>Brazzaville, République du Congo</div>
-    <div class="ci"><strong>Langue</strong>Français</div>
+    <div class="ci"><strong>Zone d'intervention</strong>Congo-Brazzaville et Afrique centrale</div>
    </div>
    <form id="contactForm" action="https://formspree.io/f/xkjrjrpd" method="POST">
     <input type="hidden" name="_subject" value="Nouveau message PACKA INVEST">
@@ -264,6 +299,7 @@ footer a:hover{color:var(--or)}
     <select id="type" name="type" required>
      <option value="">Choisir...</option>
      <option>Investisseur</option>
+     <option>Partenaire</option>
      <option>Entreprise souhaitant s'implanter</option>
      <option>Autre</option>
     </select>
@@ -277,7 +313,7 @@ footer a:hover{color:var(--or)}
     <textarea id="msg" name="message" required></textarea>
     <div class="consent">
      <input type="checkbox" id="consent" name="consentement" value="oui" required>
-     <label for="consent" style="margin:0;font-weight:400;color:#cfd8d2">J'accepte que mes données soient utilisées pour répondre à ma demande, comme décrit dans les mentions légales.</label>
+     <label for="consent">J'accepte que mes données soient utilisées pour répondre à ma demande, comme décrit dans les mentions légales.</label>
     </div>
     <button type="submit">Envoyer ma demande</button>
     <div id="statut" role="status"></div>
@@ -291,13 +327,13 @@ footer a:hover{color:var(--or)}
   <div class="cols">
    <div>
     <div class="logo" style="margin-bottom:12px"><div class="mark">P</div><div>PACKA <span class="b">INVEST</span></div></div>
-    <p>Présentation de projets et orientation pour l'implantation d'entreprises au Congo-Brazzaville et en Afrique centrale.</p>
+    <p>Projets structurants et accompagnement à l'implantation d'entreprises au Congo-Brazzaville et en Afrique centrale.</p>
    </div>
    <div>
     <h4>Navigation</h4>
     <ul>
+     <li><a href="#secteurs">Secteurs</a></li>
      <li><a href="#projets">Projets</a></li>
-     <li><a href="#modele">Modèle</a></li>
      <li><a href="#implantation">S'implanter</a></li>
      <li><a href="#accompagnement">Accompagnement</a></li>
      <li><a href="#contact">Contact</a></li>
@@ -314,12 +350,11 @@ footer a:hover{color:var(--or)}
    </div>
   </div>
   <div class="legal">
-   <p><strong>Éditeur :</strong> Emmanuel Packa, activité exercée à titre individuel, Brazzaville, République du Congo. Aucune société n'est immatriculée à ce jour (pas de RCCM ni de NIF). Contact : emmanuelpacka08@gmail.com.</p>
-   <p><strong>Hébergeur :</strong> GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
-   <p><strong>Absence d'offre :</strong> ce site présente des projets à titre d'information. Il ne constitue ni une offre de titres financiers, ni une sollicitation de placement ou d'épargne publique, ni un conseil en investissement, juridique ou fiscal. Tout investissement comporte un risque de perte en capital. Aucun rendement n'est garanti. Les projets présentés ne sont pas financés à ce jour et leur réalisation n'est pas assurée.</p>
-   <p><strong>Données personnelles :</strong> les données saisies dans le formulaire (nom, email, téléphone, message) servent uniquement à répondre à votre demande. Elles sont transmises via le service Formspree puis reçues par Emmanuel Packa. Le traitement est soumis à la loi congolaise n° 29-2019 du 10 octobre 2019 portant protection des données à caractère personnel. Pour accéder à vos données, les corriger ou les supprimer, écrivez à emmanuelpacka08@gmail.com ou par courrier à : Emmanuel Packa, Brazzaville, République du Congo.</p>
+   <p><strong>Mentions légales.</strong> Éditeur du site : Emmanuel Packa, Brazzaville, République du Congo. Contact : emmanuelpacka08@gmail.com. Hébergeur : GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+   <p><strong>Avertissement.</strong> Ce site présente des projets à titre d'information. Il ne constitue ni une offre de titres financiers, ni une sollicitation de placement ou d'épargne publique, ni un conseil en investissement, juridique ou fiscal. Tout investissement comporte un risque de perte en capital. Aucun rendement n'est garanti. Les projets présentés sont en cours de structuration et leur réalisation n'est pas assurée.</p>
+   <p><strong>Données personnelles.</strong> Les données saisies dans le formulaire (nom, email, téléphone, message) servent uniquement à répondre à votre demande. Elles sont transmises via le service Formspree puis reçues par Emmanuel Packa. Le traitement est soumis à la loi congolaise n° 29-2019 du 10 octobre 2019 portant protection des données à caractère personnel. Pour accéder à vos données, les corriger ou les supprimer, écrivez à emmanuelpacka08@gmail.com ou par courrier à : Emmanuel Packa, Brazzaville, République du Congo.</p>
   </div>
-  <div class="copy">&copy; <span id="annee"></span> PACKA INVEST. Emmanuel Packa. Tous droits réservés.</div>
+  <div class="copy">&copy; <span id="annee"></span> PACKA INVEST. Tous droits réservés.</div>
  </div>
 </footer>
 
@@ -331,13 +366,14 @@ links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',funct
 var form=document.getElementById('contactForm'),statut=document.getElementById('statut');
 form.addEventListener('submit',function(e){
  e.preventDefault();
+ statut.style.color='#fff';
  statut.textContent='Envoi en cours...';
  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
  .then(function(r){
   if(r.ok){statut.style.color='#9be3b0';statut.textContent='Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.';form.reset();}
-  else{statut.style.color='#ffb4b4';statut.textContent='Erreur d\'envoi. Écrivez-nous directement à emmanuelpacka08@gmail.com.';}
+  else{statut.style.color='#ffb4b4';statut.textContent="Erreur d'envoi. Écrivez-nous directement à emmanuelpacka08@gmail.com.";}
  })
- .catch(function(){statut.style.color='#ffb4b4';statut.textContent='Erreur réseau. Écrivez-nous directement à emmanuelpacka08@gmail.com.';});
+ .catch(function(){statut.style.color='#ffb4b4';statut.textContent="Erreur réseau. Écrivez-nous directement à emmanuelpacka08@gmail.com.";});
 });
 </script>
 </body>
